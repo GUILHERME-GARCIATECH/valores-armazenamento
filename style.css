@@ -2,29 +2,113 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: azure;
-    color: black;
+    background-color: #f4f7f6;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 header {
+    margin-bottom: 20px;
+    color: #2c3e50;
     text-align: center;
-    padding: 1.2rem 1.5rem 1rem;
+}
+
+h1 {
+    font-size: 1.8rem;
 }
 
 .content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.input {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 1rem;
-    background-color: rgb(216, 189, 189);
+    gap: 15px;
+}
+
+label {
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: -10px;
+}
+
+input[type="number"], select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #3498db;
 }
 
 .button {
-    padding: 0.5rem;
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Área de Resultado */
+#res {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+
+#res p {
+    background-color: #f9f9f9;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    color: #444;
+    word-break: break-all; 
+}
+
+#res p:first-child {
+    text-align: center;
+    color: #7f8c8d;
+    background: none;
+}
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    color: #bdc3c7;
+    font-size: 0.8rem;
 }
