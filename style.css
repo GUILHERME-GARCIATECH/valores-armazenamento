@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+
+body {
+    background-color: azure;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 1.2rem 1.5rem 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(216, 189, 189);
+}
+
+.button {
+    padding: 0.5rem;
+}

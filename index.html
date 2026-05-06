@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de armazenamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Converter valores de base binaria usados</h1>
+    </header>
+    <main>
+        <section class="content">
+            <div class="input">
+                <label for="num">Informe o valor</label>
+                <input type="number" class="num" id="num"><br>
+
+                <label for="type">Tipo do dado</label>
+                <select name="type" id="type">
+                    <option value="b">bite (b)</option>
+                    <option value="B">Byte (B)</option>
+                    <option value="KB">KiloByte (KB)</option>
+                    <option value="MB">MegaByte (MB)</option>
+                    <option value="GB">GigaByte (GB)</option>
+                    <option value="TB">TeraByte (TB)</option>
+                    <option value="PB">PetaByte (PB)</option>
+                </select>
+
+                <select name="out" id="out">
+                    <option value="b">bite (b)</option>
+                    <option value="B">Byte (B)</option>
+                    <option value="KB">KiloByte (KB)</option>
+                    <option value="MB">MegaByte (MB)</option>
+                    <option value="GB">GigaByte (GB)</option>
+                    <option value="TB">TeraByte (TB)</option>
+                    <option value="PB">PetaByte (PB)</option>
+                </select>
+
+                <div class="button">
+                    <button onclick="main()">Calcular</button>
+                </div>
+
+                <div id="res">
+                    <p>Seu resultado aparecera aqui...</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
